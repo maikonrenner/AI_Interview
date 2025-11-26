@@ -1,0 +1,90 @@
+{
+  "name": "ai-interview",
+  "version": "1.0.0",
+  "description": "AI Interview Copilot - Standalone AI Programming Assistant Overlay with Live Coding Mode",
+  "main": "src/main/main-standalone.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm run dev:renderer\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development electron .\"",
+    "dev:renderer": "vite",
+    "build:renderer": "vite build",
+    "package": "npm run build:renderer && electron-builder",
+    "package:win": "npm run build:renderer && electron-builder --win",
+    "package:mac": "npm run build:renderer && electron-builder --mac",
+    "package:linux": "npm run build:renderer && electron-builder --linux"
+  },
+  "keywords": [
+    "electron",
+    "ai",
+    "interview",
+    "coding-assistant",
+    "overlay",
+    "live-coding",
+    "standalone",
+    "openai",
+    "gemini",
+    "deepgram"
+  ],
+  "author": "Maikon Renner",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "vite": "^5.0.11",
+    "wait-on": "^7.2.0"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3.2.0",
+    "@google/generative-ai": "^0.24.1",
+    "active-win": "^8.0.0",
+    "electron-store": "^8.1.0",
+    "framer-motion": "^10.18.0",
+    "openai": "^4.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "sharp": "^0.33.1",
+    "tesseract.js": "^5.0.4"
+  },
+  "build": {
+    "appId": "com.maikonrenner.ai-interview",
+    "productName": "AI Interview",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "src/main/**/*",
+      "src/preload/**/*",
+      "public/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "public/icon.icns",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "icon": "public/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "linux": {
+      "icon": "public/icon.png",
+      "category": "Development",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}
