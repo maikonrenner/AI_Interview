@@ -1,6 +1,6 @@
-# 🚀 Interview-IA - AI Programming Assistant Overlay
+# 🚀 Interview-IA - Your AI-Powered Interview Coach
 
-> Real-time AI-powered overlay assistant for programming interviews, coding challenges, and debugging. Always visible, never intrusive.
+> Real-time AI assistant that generates personalized interview responses based on your CV and job description. Smart, fast, and always ready to help you ace your next interview.
 
 ![Interview-IA Banner](https://img.shields.io/badge/Interview_IA-v1.0.0-10B981?style=for-the-badge&logo=electron)
 ![Electron](https://img.shields.io/badge/Electron-28.x-47848F?style=flat-square&logo=electron)
@@ -29,19 +29,66 @@ Your support helps maintain and improve Interview-IA! 🙏
 
 ## 🌟 Overview
 
-Interview-IA is a desktop application built with Electron that provides real-time AI assistance for programmers. It features an always-on-top overlay window that can capture your screen, analyze code problems, and provide intelligent suggestions without interrupting your workflow.
+**Interview-IA** is your intelligent companion for job interviews and technical assessments. Built with Electron, this desktop application provides real-time AI-powered assistance through an always-on-top overlay window that analyzes interview questions and generates personalized responses based on **your CV** and the **job description**.
+
+### 🎯 How It Works
+
+Interview-IA uses advanced AI to:
+1. **📄 Analyze Your Resume**: Understands your experience, skills, and achievements
+2. **📋 Process Job Descriptions**: Extracts key requirements and expectations
+3. **🎯 Generate Smart Responses**: Creates contextual answers following the **CARL methodology**:
+   - **C**ontext: Frames the question appropriately
+   - **A**ction: Describes what you did based on your CV
+   - **R**esult: Highlights outcomes and achievements
+   - **L**ink: Connects your experience to the job requirements
+
+### ⚡ Lightning Fast
+
+- **Response Time**: ~0.56 seconds average
+- **Real-time Suggestions**: Get instant, context-aware answers during live interviews
+- **Smart Screen Analysis**: Automatically detects questions via OCR
+
+### 💡 Example: CARL in Action
+
+**Interview Question Detected:**
+> "Are you a permanent resident or do you have a work permit?"
+
+**Interview-IA Response:**
+
+```
+Context: You are asking about my permanent work status or if I am a permanent resident.
+
+Action: My CV does not have information about my citizenship, work permit, or permanent residency status.
+
+Result: I cannot give you this detail based on the information I have.
+
+Link: If this is a key requirement for the job, I can share this information with you separately.
+```
+
+✨ **Generated in 0.56 seconds** - Professional, honest, and perfectly structured!
+
+### 🎯 Perfect For
+
+- **📞 Remote Interviews**: Video calls on Zoom, Teams, Meet, etc.
+- **💼 Behavioral Interviews**: STAR/CARL formatted responses
+- **🎓 Technical Assessments**: Coding challenges and live coding sessions
+- **📝 Application Questions**: Pre-screening questionnaires
+- **🔄 Career Transitions**: Positioning your experience for new roles
+- **🌍 International Jobs**: Tailoring answers to different markets
 
 ### ⭐ Key Features
 
-- **🎯 Live Coding Mode**: Capture screen, extract code with OCR, and get AI-powered solutions
+- **🧠 CV-Powered Responses**: Generates answers based on YOUR actual experience and qualifications
+- **📊 CARL Methodology**: Structured responses that impress interviewers
+- **🎯 Job-Specific Answers**: Tailors responses to match the job description requirements
 - **🎤 Voice Transcription**: Ask questions using voice commands
-- **👻 Auto-Hide During Screen Share**: Automatically hides when screen sharing is detected
-- **🌗 Dark Theme**: Beautiful dark interface optimized for long coding sessions
-- **⚡ Real-time Analysis**: Continuous screen monitoring with configurable intervals
-- **🔍 Smart Detection**: Automatically detects programming language and coding platform (LeetCode, HackerRank, etc.)
-- **🎨 Adjustable Transparency**: Control window opacity from 0% to 100%
+- **📸 Live Screen Capture**: Automatically detects and analyzes interview questions with OCR
+- **👻 Auto-Hide Mode**: Invisible during screen sharing - stays discreet and professional
+- **⚡ Ultra-Fast**: Sub-second response times to keep you confident and prepared
+- **🌗 Dark Theme**: Beautiful interface optimized for long interview sessions
+- **🎨 Adjustable Transparency**: Control window opacity to see your interview platform
 - **⌨️ Global Shortcuts**: Complete keyboard control without switching windows
-- **🔌 Django Integration**: Seamless connection with AI Interview Co-pilot backend
+- **🔒 Privacy First**: Your CV and data stay on your machine
 
 ---
 
